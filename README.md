@@ -28,7 +28,9 @@ Some parameters explanations:
 ## Output format:
 
 
-Command example, with the french sequoia-corpus **[6]** (post-processed: only sentences and no parsing information), 2 topics and 10 words shown for each topic:
+Script example, with the french sequoia-corpus **[6]** (post-processed: only sentences and no parsing information), 2 topics and 10 words shown for each topic:
+
+**Command**:
 
 'python cvb_LDA.py sequoia-corpus_sent french 2 10'
 
