@@ -1,0 +1,5 @@
+numpy
+nltk
+scikit-learn
+pandas
+cvbLDA (https://github.com/davidandrzej/cvbLDA)
