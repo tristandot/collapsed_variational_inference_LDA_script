@@ -15,6 +15,7 @@ You can run the program thanks to the command:
 
 Some parameters explanations: 
 
+* 'text_file_path' (str): path to the file containing the documents to analyze (format: one document per line, exactly one whitespace between each token)
 * 'language' (str):used to process input text (remove stopwords): can be 'french' or 'english'
 * 'nb_topics' (int): number of topics the LDA algorithm will consider
 * 'nb_words_per_topic' (int): the number of words which will be output linked to each topic
