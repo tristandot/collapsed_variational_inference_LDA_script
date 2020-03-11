@@ -167,7 +167,7 @@ if(mode=='true'):
     words = vectorizer.get_feature_names()
     for topic_idx, topic in enumerate(lda.components_ / lda.components_.sum(axis=1)[:, np.newaxis]):
         print("\nTopic " + str(topic_idx+1) +': ' + str(nb_words_topic) + ' most important words, with p(w|z):')
-        toto = topic.argsort()[:-nb_words_topic - 1:-1]
+        topic_sorted = topic.argsort()[:-nb_words_topic - 1:-1]
         probas=np.sort(np.array(topic))[::-1]
-        for i in range(len(toto)):
-            print(words[toto[i]] +', ' + str(round(probas[i]*100,7))+'%')
+        for i in range(len(topic_sorted)):
+            print(words[topic_sorted[i]] +', ' + str(round(probas[i]*100,7))+'%')
