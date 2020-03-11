@@ -35,8 +35,7 @@ Command example, with the french sequoia-corpus **[6]** (post-processed: only se
 **Output**:
 
 
-![](script_example.png "sequoia_example-cvb_lda")
-
+<img src="script_example.png" width="35%">
 
 The two main topics of the sequoia corpus are pointed out: medical articles and political / judicial ones. 
 Qualitatively, cvb LDA and Sklearn LDA give approximately the same results. Interestingly (and strangely), cvb LDA runs quite faster than Sklearn LDA. 
