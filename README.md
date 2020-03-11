@@ -28,7 +28,7 @@ Some parameters explanations:
 
 ## Output format:
 
-Output the nb_words_per_topic most representative words of each topic (the number of topics being equal to nb_topics).
+Output the nb_words_per_topic most representative words of each topic (the number of different topics being equal to nb_topics).
 
 Script example, with the french sequoia-corpus **[6]** (post-processed: only sentences and no parsing information), 2 topics and 10 words shown for each topic:
 
