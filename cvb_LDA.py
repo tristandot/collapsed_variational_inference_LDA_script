@@ -40,7 +40,7 @@ print("\n######## DATA LOADING AND PROCESSING ########")
 
 f = io.open(file_path, 'r')
 
-tree_repr_db = []
+corpus_0 = []
 for line in f:
     tree_repr = unidecode(line.strip())
     if len(tree_repr) == 0:
@@ -49,7 +49,7 @@ for line in f:
     while tree_repr[-1] == ' ':
         tree_repr = tree_repr[:-1]
 
-    tree_repr_db.append(nltk.word_tokenize(tree_repr))
+    corpus_0.append(nltk.word_tokenize(tree_repr))
     pass
 
 
@@ -61,7 +61,7 @@ if(language == 'french'):
 else:
     stop_words = nltk.corpus.stopwords.words('english')
 
-corpus = tree_repr_db
+corpus = corpus_0
 
 
 #lower it and remove stop words
@@ -127,12 +127,24 @@ for j in range(nb_topics):
     for i in range(len(topic[j])):
         print(index_dict[topic[j][i]]+', ' + str(round(probas[i]*100,7))+'%')
 
-#Link each document to its main topic, thanks to a dictionnary
+#Link each document to its main topic, and the corresponding max topic probability, thanks to a dictionnary
 doc_topic={}
 for j in range(len(corpus)):
-    doc_topic[j] = [list(np.array(theta)[j].argsort()[-1:][::-1])[0],np.sort(np.array(theta))[j][::-1][0]]
+    doc_topic[j] = [list(np.array(theta)[j].argsort()[-1:][::-1])[0],np.sort(np.array(theta))[j][::-1][0],np.sort(np.array(theta)[j][-1:][::-1])[0]]
 
-#print(doc_topic)
+#Search for the most representative documents of each topic
+#for i in range(nb_topics):
+#    doc = []
+#    for j in range(len(doc_topic)):
+#        if(doc_topic[j][0]==i):
+#            doc.append(doc_topic[j][1])
+
+#    max_prob = np.sort(np.array(doc)[-3:][::-1])[:]
+#    doc_max_prob_idx = np.array(doc).argsort()[-3:][::-1][:]
+#    print(max_prob)
+#    for l in range(len(doc_max_prob_idx)):
+#        print(corpus_0[doc_max_prob_idx [l]])
+
 
 #If user has specified comparison, comparison with the LDA Sklearn implementation performances
 if(mode=='true'):
