@@ -20,8 +20,8 @@ Some parameters explanations:
 * 'nb_topics' (int): number of topics the LDA algorithm will consider
 * 'nb_words_per_topic' (int): the number of words which will be output linked to each topic
 * {optional}comparison (bool): comparison with the Sklearn LDA algorithm ? (default= 'true')
-* {optional}alpha (int): cvb LDA alpha parameter (default = 0.1)
-*  {optional}beta (int): cvb LDA beta parameter (default = 0.1)
+* {optional}alpha (float): cvb LDA alpha parameter (default = 0.1)
+*  {optional}beta (float): cvb LDA beta parameter (default = 0.1)
 *   {optional}nb_max_iter (int): cvb LDA max number of iterations (default = 100)
 *   {optional}tolerance (int): cvb LDA tolerance criterion (default = 0.001)
 
