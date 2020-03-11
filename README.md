@@ -1,4 +1,4 @@
-## Easy-to-use collapsed variational bayesian inference for Latent Dirichlet Allocation (LDA) implementation
+# Easy-to-use collapsed variational bayesian inference for Latent Dirichlet Allocation (LDA) implementation
 
 Simple interface to test a LDA **[1]** implementation based on Collapsed Variational Bayesian (cvb) Inference **[2]**. Mainly thought to be tested on 'toy' examples, and easely compared to the Sklearn LDA implementation **[3]**, which is based on Stochastic Variational Inference **[4]**.
 
@@ -7,7 +7,7 @@ This program is based on the CVB-LDA module written by David Andrzejewski **[5]*
 See requirements.txt for other libraries requirements.
 
 
-### Run the program:
+## Run the program:
 
 You can run the program thanks to the command: 
 
@@ -25,7 +25,7 @@ Some parameters explanations:
 *   {optional}tolerance (int): cvb LDA tolerance criterion (default = 0.001)
 
 
-### Output format:
+## Output format:
 
 
 Command example, with the french sequoia-corpus **[6]** (post-processed: only sentences and no parsing information), 2 topics and 10 words shown for each topic:
@@ -34,14 +34,15 @@ Command example, with the french sequoia-corpus **[6]** (post-processed: only se
 
 **Output**:
 
-![cvb LDA example on sequoia_fr v6.0](https://raw.githubusercontent.com/tristandot/collapsed_variational_inference_LDA_script/master/script_example.png  "sequoia_example-cvb_lda")
+
+![](script_example.png "sequoia_example-cvb_lda")
 
 
 The two main topics of the sequoia corpus are pointed out: medical articles and political / judicial ones. 
 Qualitatively, cvb LDA and Sklearn LDA give approximately the same results. Interestingly (and strangely), cvb LDA runs quite faster than Sklearn LDA. 
 
 
-### References:
+## References:
 
 **[1] Latent Dirichlet Allocation**
 Blei, D. M., Ng, A. Y., and Jordan, M. I. 
