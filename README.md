@@ -60,7 +60,7 @@ Advances in Neural Information Processing Systems (NIPS) 19, 2007.
 **[4] Stochastic Variational Inference**, Matthew D. Hoffman, David M. Blei,
 Chong Wang, John Paisley, 2013
 
-**[5] David Andrzejewski CVB-LDA code and installation procedures**, <https://github.com/davidandrzej/cvbLDA>
+**[5] David Andrzejewski CVB-LDA code and installation procedures**: <https://github.com/davidandrzej/cvbLDA>
 
 **[6] Sequoia Fr v6.0 database, link**:
 <https://www.rocq.inria.fr/alpage-wiki/tiki-index.php?page=CorpusSequoia>
